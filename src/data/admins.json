@@ -1,0 +1,165 @@
+{
+  "admins": [
+    {
+      "id": 1,
+      "empId": "EMPID5987401",
+      "img": "",
+      "name": "Parthasarathi",
+      "mobile": "9486938982",
+      "telephone": "0422 - 9874 5642",
+      "role": "Senior Manager",
+      "status": "Active",
+      "email": "parthasarathi@gmail.com",
+      "employeeInfo": {
+        "dateOfJoining": "15 May 2012",
+        "currentDesignation": "Senior Manager",
+        "businessEmail": "parthasarathi.mgr@company.com"
+      },
+      "personalInfo": {
+        "address": "12, Anna Salai, T. Nagar, Chennai - 600017.",
+        "alternateMobileNo": "+91 9486938980",
+        "personalEmailId": "parthasarathi@gmail.com",
+        "bloodGroup": "B+ Ve",
+        "dateOfBirth": "10 August 1985"
+      },
+      "backgroundInfo": {
+        "referredBy": "HR Team",
+        "previousJobInfo": "Worked as Assistant Manager at Tech Corp",
+        "backgroundCheckInfo": "Verified",
+        "resume": "Parthasarathi_Resume.pdf"
+      },
+      "professionalInfo": {
+        "educationalQualification": "MBA in Human Resources",
+        "languagesKnown": ["Tamil", "English"],
+        "skills": ["Team Leadership", "Strategic Planning"],
+        "certificates": ["10th_marksheet.jpg", "12th_marksheet.jpg", "MBA_degree.jpg"]
+      },
+      "personalityInfo": {
+        "interests": ["Reading", "Chess", "Gardening"],
+        "traits": ["Leader", "Analytical", "Punctual"]
+      }
+    },
+    {
+      "id": 2,
+      "empId": "EMPID5987402",
+      "img": "../../assets/images/profile-images/anjali.png",
+      "name": "Anjali",
+      "mobile": "9045385678",
+      "telephone": "0422 - 9874 5642",
+      "role": "Manager",
+      "status": "Inactive",
+      "email": "anjali@gmail.com",
+      "employeeInfo": {
+        "dateOfJoining": "26 June 2014",
+        "currentDesignation": "Manager",
+        "businessEmail": "anjali.m@company.com"
+      },
+      "personalInfo": {
+        "address": "3/168, Kamaraj Colony, Tambaram, Chennai - 600059.",
+        "alternateMobileNo": "+91 98745 23987",
+        "personalEmailId": "meenakshi@gmail.com",
+        "bloodGroup": "O+ Ve",
+        "dateOfBirth": "21 June 1988"
+      },
+      "backgroundInfo": {
+        "referredBy": "Anjali Carebuddy",
+        "previousJobInfo": "Worked on Private Company Tambaram",
+        "backgroundCheckInfo": "Info",
+        "resume": "Anjali_Resume.pdf"
+      },
+      "professionalInfo": {
+        "educationalQualification": "B.Com With Computer Applications",
+        "languagesKnown": ["Tamil", "English", "Sanskrit"],
+        "skills": ["Listening Music", "Traveling"],
+        "certificates": [
+          "10th_marksheet.jpg",
+          "12th_marksheet.jpg",
+          "Provisional_certificate.jpg",
+          "Degree.jpg"
+        ]
+      },
+      "personalityInfo": {
+        "interests": ["Cricket", "Music", "Politics"],
+        "traits": ["Patient", "Diligent", "Order-Taker", "Risk-Taker"]
+      }
+    },
+    {
+      "id": 3,
+      "empId": "EMPID5987403",
+      "img": "../../assets/images/profile-images/durga.png",
+      "name": "Durga",
+      "mobile": "9876543210",
+      "telephone": "0422 - 9874 5642",
+      "role": "Super Admin",
+      "status": "Resign",
+      "email": "durga@gmail.com",
+      "employeeInfo": {
+        "dateOfJoining": "01 February 2018",
+        "currentDesignation": "Super Admin",
+        "businessEmail": "durga.admin@company.com"
+      },
+      "personalInfo": {
+        "address": "45, Velachery Main Road, Chennai - 600042.",
+        "alternateMobileNo": "+91 98765 43211",
+        "personalEmailId": "durga.private@gmail.com",
+        "bloodGroup": "A+ Ve",
+        "dateOfBirth": "05 December 1990"
+      },
+      "backgroundInfo": {
+        "referredBy": "Direct",
+        "previousJobInfo": "Senior Operations Lead at Web Solutions",
+        "backgroundCheckInfo": "Cleared",
+        "resume": "Durga_CV.pdf"
+      },
+      "professionalInfo": {
+        "educationalQualification": "B.Sc Computer Science",
+        "languagesKnown": ["Tamil", "English", "Telugu"],
+        "skills": ["Database Management", "System Administration"],
+        "certificates": ["Degree_Certificate.png", "12th_Mark_Sheet.png"]
+      },
+      "personalityInfo": {
+        "interests": ["Cooking", "Blogging", "Photography"],
+        "traits": ["Problem-Solver", "Empathetic", "Adaptive"]
+      }
+    },
+    {
+      "id": 4,
+      "empId": "EMPID5987404",
+      "img": "../../assets/images/profile-images/sreeleela.png",
+      "name": "sreeleela",
+      "mobile": "9876512345",
+      "telephone": "0422 - 9874 5642",
+      "role": "Admin",
+      "status": "Active",
+      "email": "sreeleela@gmail.com",
+      "employeeInfo": {
+        "dateOfJoining": "11 November 2021",
+        "currentDesignation": "Admin",
+        "businessEmail": "sreeleela.a@company.com"
+      },
+      "personalInfo": {
+        "address": "78, OMR Road, Sholinganallur, Chennai - 600119.",
+        "alternateMobileNo": "+91 98765 12340",
+        "personalEmailId": "sreeleela@gmail.com",
+        "bloodGroup": "O- Ve",
+        "dateOfBirth": "14 July 1995"
+      },
+      "backgroundInfo": {
+        "referredBy": "Consultancy",
+        "previousJobInfo": "Executive Support at Global Services",
+        "backgroundCheckInfo": "Verified",
+        "resume": "Sreeleela_Profile.pdf"
+      },
+      "professionalInfo": {
+        "educationalQualification": "B.Tech Information Technology",
+        "languagesKnown": ["Tamil", "English", "Kannada"],
+        "skills": ["Customer Support", "Documentation"],
+        "certificates": ["BTech_Degree.pdf", "12th_Sheet.jpg"]
+      },
+      "personalityInfo": {
+        "interests": ["Dancing", "Movies", "Fitness"],
+        "traits": ["Energetic", "Communicative", "Quick Learner"]
+      }
+    }
+  ]
+}

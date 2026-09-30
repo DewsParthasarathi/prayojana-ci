@@ -1,0 +1,16 @@
+export const ROUTES = {
+  LOGIN: "/login",
+  OTP_VERIFICATION: "/otp-verification",
+  HOUSEHOLD: "/household",
+  APPLICATIONS: "/applications",
+  CALENDAR: "/calendar",
+  MESSAGES: "/messages",
+  CHECKLIST: "/checklist",
+  SOLO: "/solo",
+  FILES: "/files",
+  DETAILS: "/details/:householdId",
+  MEMBERDETAILS: "/members-details",
+  USERDATA: "/userdata/:userId",
+  USERDATAFORM: "/userForm",
+  USERDATAEDITFORM: "/userEditForm",
+};

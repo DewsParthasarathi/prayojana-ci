@@ -1,0 +1,438 @@
+/* @import "tailwindcss";
+@theme {
+  --font-sans: "poppins", sans-serif;
+  --color-primary: #1b1a1f;
+  --color-white: #ffffff;
+  --color-blue: #006bbf;
+  --color-lite-blue: #1486df;
+  --color-label-gray: #666666;
+  --color-liteGray: #333333;
+  --color-chipBg: #ededed;
+  --color-chipBorder: #d7d7d7;
+  --color-login-subhead: #848484;
+  --color-black: #000000;
+  --note-color: #111111;
+
+}
+@font-face {
+  font-family: "poppins";
+  src: url("./assets/fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url("./assets/fonts/Poppins-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url("./assets/fonts/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url("./assets/fonts/Poppins-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset !important;
+  -webkit-text-fill-color: #000 !important;
+  transition: background-color 9999s ease-in-out 0s;
+}
+
+* {
+  box-sizing: border-box;
+  text-wrap: pretty;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  overflow: hidden;
+  height: 100vh;
+  font-family: var(--font-sans);
+}
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  animation-fill-mode: both;
+  animation-duration: 3s;
+}
+.fadeIn-infinite {
+  animation-iteration-count: infinite;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.login-swiper .swiper-pagination {
+  z-index: 11;
+  left: -41% !important;
+  top: 74% !important;
+}
+
+.login-swiper .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  opacity: 1 !important;
+}
+
+.login-swiper .swiper-pagination-bullet-active {
+  width: 35px;
+  height: 10px;
+  border-radius: 35px;
+  background-color: #fff;
+}
+.bred {
+  border: 2px solid red;
+}
+.bblue {
+  border: 2px solid blue;
+}
+.bgreen {
+  border: 2px solid green;
+}
+.purple {
+  border: 2px solid purple;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
+.hoverup:hover {
+  transform: translateY(-5px);
+}
+.hoverleft:hover {
+  transform: translatex(5px);
+}
+.hoverRight:hover {
+  transform: translatex(-5px);
+}
+.transition {
+  transition: 0.3s ease;
+}
+
+@media (max-width: 1600px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 1536px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 1366px) {
+  html {
+    font-size: 40%;
+  }
+}
+@media (max-width: 1280px) {
+  html {
+    font-size: 43%;
+  }
+} */
+@import "tailwindcss";
+@theme {
+  --font-sans: "poppins", sans-serif;
+  --color-primary: #1b1a1f;
+  --color-white: #ffffff;
+  --color-blue: #006bbf;
+  --color-lite-blue: #1486df;
+  --color-label-gray: #666666;
+
+  --color-chipBg: #ededed;
+  --color-chipBorder: #d7d7d7;
+  --color-login-subhead: #848484;
+  --color-black: #000000;
+  --note-color: #111111;
+  --color-liteGray: #333333;
+  /* --text-fs12: 1.2rem;
+  --text-fs13: 1.3rem;
+  --text-fs14: 1.4rem;
+  --text-fs15: 1.5rem;
+  --text-fs16: 1.6rem;
+  --text-fs17: 1.7rem;
+  --text-fs18: 1.8rem;
+  --text-fs19: 1.9rem;
+  --text-fs20: 2rem;
+  --text-fs21: 2.1rem;
+  --text-fs22: 2.2rem;
+  --text-fs23: 2.3rem;
+  --text-fs24: 2.4rem;
+  --text-fs25: 2.5rem;
+  --text-fs26: 2.6rem;
+  --text-fs27: 2.7rem;
+  --text-fs28: 2.8rem;
+  --text-fs29: 2.9rem;
+  --text-fs30: 3rem;
+  --text-fs31: 3.1rem;
+  --text-fs32: 3.2rem;
+  --text-fs33: 3.3rem;
+  --text-fs34: 3.4rem;
+  --text-fs35: 3.5rem;
+  --text-fs36: 3.6rem;
+  --text-fs37: 3.7rem;
+  --text-fs38: 3.8rem;
+  --text-fs39: 3.9rem;
+  --text-fs40: 4rem;
+  --text-fs41: 4.1rem;
+  --text-fs42: 4.2rem;
+  --text-fs43: 4.3rem;
+  --text-fs44: 4.4rem;
+  --text-fs45: 4.5rem;
+  --text-fs46: 4.6rem;
+  --text-fs47: 4.7rem;
+  --text-fs48: 4.8rem;
+  --text-fs49: 4.9rem;
+  --text-fs50: 5rem;
+  --text-fs60: 6rem;
+  --text-fs70: 7rem;
+  --text-fs80: 8rem;
+  --text-fs90: 9rem;
+  --text-fs100: 10rem;
+  --text-fs120: 12rem; */
+}
+
+:root {
+  --color-primary: #1b1a1f;
+  --dashboard-bg: #f5f5f5;
+  --nav-color: #0000000d;
+  --black: #000000;
+  --color-liteGray: #333333;
+  --color-label-gray: #666666;
+  --tableBody: #00000008;
+  --icon-filter: brightness(1) invert(0);
+}
+
+[data-theme="dark"] {
+  --color-primary: #fff;
+  --dashboard-bg: #121212;
+  --nav-color: #ffffff26;
+  --black: #fff;
+  --color-liteGray: #e5e7eb;
+  --color-label-gray: #a3a3a3;
+  --tableBody: #ffffff08;
+  --icon-filter: brightness(1) invert(1);
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url("./assets/fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url("./assets/fonts/Poppins-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url("./assets/fonts/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url("./assets/fonts/Poppins-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset !important;
+  -webkit-text-fill-color: #000 !important;
+  transition: background-color 9999s ease-in-out 0s;
+}
+
+* {
+  box-sizing: border-box;
+  text-wrap: pretty;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  overflow: hidden;
+  height: 100vh;
+  font-family: var(--font-sans);
+}
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  animation-fill-mode: both;
+  animation-duration: 3s;
+}
+.fadeIn-infinite {
+  animation-iteration-count: infinite;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.login-swiper .swiper-pagination {
+  z-index: 11;
+  left: -41% !important;
+  top: 74% !important;
+}
+
+.login-swiper .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  opacity: 1 !important;
+}
+
+.login-swiper .swiper-pagination-bullet-active {
+  width: 35px;
+  height: 10px;
+  border-radius: 35px;
+  background-color: #fff;
+}
+.bred {
+  border: 2px solid red;
+}
+.bblue {
+  border: 2px solid blue;
+}
+.bgreen {
+  border: 2px solid green;
+}
+.purple {
+  border: 2px solid purple;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
+.hoverup:hover {
+  transform: translateY(-5px);
+}
+.hoverleft:hover {
+  transform: translatex(5px);
+}
+.hoverRight:hover {
+  transform: translatex(-5px);
+}
+.transition {
+  transition: 0.3s ease;
+}
+
+@media (max-width: 1600px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 1536px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 1366px) {
+  html {
+    font-size: 40%;
+  }
+}
+@media (max-width: 1280px) {
+  html {
+    font-size: 43%;
+  }
+}
+
+/* Global cursor rules for interactive elements */
+button:not(:disabled),
+[role="button"]:not([aria-disabled="true"]),
+a,
+label[for],
+summary,
+select,
+input[type="checkbox"],
+input[type="radio"],
+input[type="submit"],
+input[type="button"],
+input[type="reset"],
+[data-clickable],
+[onclick] {
+  cursor: pointer;
+}
+
+button:disabled,
+[aria-disabled="true"] {
+  cursor: not-allowed;
+}
