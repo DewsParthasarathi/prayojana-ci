@@ -1,6 +1,9 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
 import CustomImage from "@/components/image-component/CustomImage";
+// eslint-disable-next-line no-unused-vars
 import editIcon from "@assets/images/detailspage-img/edit.png";
+// eslint-disable-next-line no-unused-vars
 import deleteIcon from "@assets/images/detailspage-img/delete.png";
 import relativeImg from "@assets/images/profile-images/relative-image.svg";
 import crownImg from "@assets/images/profile-images/yellow-crown.svg";

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import CustomImage from "../image-component/CustomImage";
 import downArrow from "@assets/images/customer-img/down-arrow.png";
 

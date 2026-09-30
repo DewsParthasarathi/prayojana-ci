@@ -2,7 +2,6 @@ import CustomImage from "@/components/image-component/CustomImage";
 import downloadIcon from "@assets/images/logos/download.svg";
 import pdfIcon from "@assets/images/logos/pdf.svg";
 import pdfFile from "@assets/pdf/resume.pdf";
-import React from "react";
 
 const BackgroundInfo = ({ users }) => {
   return (

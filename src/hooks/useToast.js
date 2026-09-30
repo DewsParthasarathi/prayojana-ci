@@ -1,4 +1,4 @@
-import { ToastManagerContext } from "@/components/Toast/ToastProvider";
+import { ToastManagerContext } from "@/components/Toast/toastManagerContext";
 import { useContext } from "react";
 
 export const useToast = () => {

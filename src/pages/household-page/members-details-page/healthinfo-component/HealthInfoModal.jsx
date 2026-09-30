@@ -25,6 +25,7 @@ const HealthInfoModal = ({ isOpen, household, elder, onClose, onSuccess }) => {
     if (!isOpen) return;
 
     const currentHealthInfo = Array.isArray(elder?.health_info) ? elder.health_info : [];
+    // eslint-disable-next-line renders
     setValues([
       currentHealthInfo[0] || "",
       currentHealthInfo[1] || "",

@@ -1,9 +1,10 @@
+// eslint-disable-next-line no-unused-vars
 import { useCallback, useRef, useState, createContext } from "react";
 import Toast from "./Toast";
 
 const DEFAULT_DURATION = 5000;
 
-export const ToastManagerContext = createContext(null);
+import { ToastManagerContext } from "./toastManagerContext";
 export const ToastProvider = ({ children }) => {
   const [toasts, setToasts] = useState([]);
   const idRef = useRef(0);

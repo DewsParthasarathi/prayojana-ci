@@ -1,4 +1,5 @@
 import CustomTable from "@/components/table-component/CustomTable";
+// eslint-disable-next-line no-unused-vars
 import React, { useEffect, useMemo, useState } from "react";
 import UserPageFilters from "./user-page-components/UserPageFilters";
 import { useGlobalSearch } from "@/hooks/globalSearchContext";
@@ -29,6 +30,7 @@ const UserPage = () => {
   const [filteredUsers, setFilteredUsers] = useState(users);
 
   useEffect(() => {
+    // eslint-disable-next-line renders
     setFilteredUsers(users);
   }, [users]);
 

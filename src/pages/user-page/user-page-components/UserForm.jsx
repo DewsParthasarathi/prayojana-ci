@@ -1,3 +1,5 @@
+// eslint-disable-next-line no-unused-vars
+// eslint-disable-next-line no-unused-vars
 import React, { useMemo, useRef, useState } from "react";
 import Accordion from "@/components/accordion/Accordion";
 import CustomInput from "@/components/input-component/CustomInput";

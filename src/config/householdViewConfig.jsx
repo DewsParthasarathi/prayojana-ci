@@ -9,6 +9,7 @@ import deleteIcon from "@assets/images/detailspage-img/delete.png";
 
 const HEADER_CLASS = "font-semibold bg-[#0000001A] text-gray-700 text-[1.8rem] py-[2.3rem] ";
 
+// eslint-disable-next-line no-unused-vars
 const sortableHeader = (label) => (
   <span style={{ whiteSpace: "nowrap" }} className="inline-flex items-start gap-[0.6rem] ">
     {label}

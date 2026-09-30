@@ -18,7 +18,9 @@ const CustomDateInput = ({
       try {
         input.showPicker();
         return;
-      } catch {}
+      } catch {
+        // ignore
+      }
     }
     input.focus();
   };

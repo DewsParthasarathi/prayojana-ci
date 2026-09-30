@@ -1,4 +1,3 @@
-import React from "react";
 
 const Loader = ({ loading = true }) => {
   if (!loading) return null;

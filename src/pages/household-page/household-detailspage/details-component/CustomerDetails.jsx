@@ -1,5 +1,4 @@
 import CustomImage from "@/components/image-component/CustomImage";
-import React from "react";
 import menImg from "@assets/images/customer-img/men.png";
 import womenImg from "@assets/images/customer-img/women.png";
 import customerEdit from "@assets/images/logos/customer-edit.png";
@@ -23,6 +22,7 @@ const CustomerDetails = ({ household }) => {
   const { patch } = useFetch();
   const { showToast } = useToast();
   const confirm = useConfirm();
+  // eslint-disable-next-line no-unused-vars
   const { elders = [], son_contact = {}, care_buddies = [], ...householdDetails } = household || {};
   console.log(son_contact);
 

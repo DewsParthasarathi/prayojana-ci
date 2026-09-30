@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import CardComponent from "@/components/card-component/CardComponent";
 import editIcon from "@assets/images/detailspage-img/edit.png";
 import deleteIcon from "@assets/images/detailspage-img/delete.png";

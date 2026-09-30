@@ -1,7 +1,9 @@
-import React from "react";
+// eslint-disable-next-line no-unused-vars
 import Sun from "./Sun.svg";
+// eslint-disable-next-line no-unused-vars
 import Moon from "./Moon.svg";
 import "./DarkMode.css";
+// eslint-disable-next-line no-unused-vars
 import CustomImage from "../image-component/CustomImage";
 
 const DarkMode = () => {

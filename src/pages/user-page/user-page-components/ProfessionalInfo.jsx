@@ -1,4 +1,3 @@
-import React from "react";
 import sslc from "@assets/images/certificates/10th.png";
 import hsc from "@assets/images/certificates/12th.png";
 import consolidate from "@assets/images/certificates/consolidate.png";

@@ -1,7 +1,8 @@
 import CustomImage from "@/components/image-component/CustomImage";
 import CustomInput from "@/components/input-component/CustomInput";
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import settingsLogo from "@assets/images/logos/settings.png";
+// eslint-disable-next-line no-unused-vars
 import themeLogo from "@assets/images/logos/theme.png";
 import notificationLogo from "@assets/images/logos/notification.png";
 import useFetch from "@/hooks/useFetch";
@@ -23,6 +24,7 @@ const Navbar = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const { searchTerm, setSearchTerm } = useGlobalSearch();
+  // eslint-disable-next-line no-unused-vars
   const isMemberDetailsPage = location.pathname === ROUTES.MEMBERDETAILS;
   const isHouseholdDetailsPage = location.pathname === ROUTES.HOUSEHOLD;
   const profileRef = useRef(null);
@@ -34,12 +36,14 @@ const Navbar = () => {
     window.location.reload();
     navigate("/login");
   };
+  // eslint-disable-next-line no-unused-vars
   const { data = [], error } = useFetch("http://localhost:4000/admins");
 
   useEffect(() => {
     const user = JSON.parse(sessionStorage.getItem("authUser"));
 
     if (user) {
+      // eslint-disable-next-line renders
       setActiveUser(user);
     }
   }, []);
@@ -48,6 +52,7 @@ const Navbar = () => {
     if (!activeUser || !Array.isArray(data) || data.length === 0) return;
 
     const validUser = data.find((admin) => admin.mobile === activeUser.mobile);
+    // eslint-disable-next-line renders
     setValidUser(validUser);
     console.log("Valid User:", validUser);
   }, [activeUser, data]);

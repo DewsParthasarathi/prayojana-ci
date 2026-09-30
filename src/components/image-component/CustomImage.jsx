@@ -1,4 +1,3 @@
-import React from "react";
 
 const CustomImage = ({
   src,
@@ -14,6 +13,8 @@ const CustomImage = ({
       src={src}
       alt={alt}
       loading={loading}
+      width={width}
+      height={height}
       className={` object-cover rounded-lg transition-all duration-300 ${className}`}
       {...props}
     />

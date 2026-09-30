@@ -191,6 +191,7 @@
 
 // export default HouseholdSubView;
 import { useMemo, useState } from "react";
+// eslint-disable-next-line no-unused-vars
 import { Plus } from "lucide-react";
 
 import plusIcon from "@/assets/images/household-images/add-icon.png";
@@ -245,6 +246,7 @@ const HouseholdSubView = ({ viewType, household }) => {
   const [filters, setFilters] = useState({});
   const [appliedFilters, setAppliedFilters] = useState({});
 
+  // eslint-disable-next-line no-unused-vars
   const resetView = () => {
     setRows(seedRows);
     setFilters({});
@@ -295,6 +297,7 @@ const HouseholdSubView = ({ viewType, household }) => {
 
       try {
         await patch(`http://localhost:4001/houseHoldData/${household.id}`, {
+          // eslint-disable-next-line no-unused-vars
           [config.dataKey]: nextRows.map(({ __id, ...rest }) => rest),
         });
         setRows(nextRows);

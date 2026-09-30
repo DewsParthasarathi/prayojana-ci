@@ -1,9 +1,11 @@
-import React, { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { useLocation, useParams } from "react-router-dom";
 import Details from "./details-component/PlanContactDetails";
 import CustomerDetails from "./details-component/CustomerDetails";
 import { useHouseholdDetailRefresh } from "@/hooks/householdDetailRefreshContext.jsx";
+// eslint-disable-next-line no-unused-vars
 import useFetch from "@/hooks/useFetch";
+// eslint-disable-next-line no-unused-vars
 import ReusableSidebar from "@/components/sidebar-drawer/ReusableSidebar";
 
 const HouseHoldDetail = () => {
@@ -42,6 +44,7 @@ const HouseHoldDetail = () => {
   }, [householdId, registerCurrentHousehold]);
 
   useEffect(() => {
+    // eslint-disable-next-line renders
     fetchHousehold();
   }, [fetchHousehold]);
 

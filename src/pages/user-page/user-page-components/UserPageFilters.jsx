@@ -1,9 +1,11 @@
 import CustomDropdown from "@/components/dropdown-component/CustomDropdown";
 import CustomImage from "@/components/image-component/CustomImage";
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 import filterIcon from "@assets/images/logos/filter-icon.svg";
 import ButtonComponent from "@/components/button-component/ButtonComponent";
 
+// eslint-disable-next-line no-unused-vars
 const UserPageFilters = ({ filters, setFilters, onApply, onReset, count }) => {
   const empIdOptions = [
     { value: "EMPID5987401", label: "EMPID5987401" },
@@ -114,6 +116,7 @@ const UserPageFilters = ({ filters, setFilters, onApply, onReset, count }) => {
 
         <div className="w-full flex flex-wrap gap-[1.4rem]">
           {Object.entries(filters)
+            // eslint-disable-next-line no-unused-vars
             .filter(([_, value]) => value !== "")
             .map(([key, value]) => (
               <div

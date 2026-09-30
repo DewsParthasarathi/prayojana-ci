@@ -1,4 +1,3 @@
-import React from "react";
 import ButtonComponent from "@/components/button-component/ButtonComponent";
 import CustomDropdown from "@/components/dropdown-component/CustomDropdown";
 
@@ -126,6 +125,7 @@ const HouseHoldFilters = ({ filters, setFilters, onApply, onReset, count }) => {
 
         <div className="w-full flex flex-wrap gap-[1.4rem]">
           {Object.entries(filters)
+            // eslint-disable-next-line no-unused-vars
             .filter(([_, value]) => value !== "")
             .map(([key, value]) => (
               <div

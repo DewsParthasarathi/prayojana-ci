@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import logo from "@assets/images/logos/prayojana-logo.png";
 import CustomImage from "@/components/image-component/CustomImage";
 import Applogo from "@assets/images/logos/applications.png";

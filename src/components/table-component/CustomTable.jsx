@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 
 const getSortValue = (row, column) => {
   if (typeof column.sortValue === "function") return column.sortValue(row);
@@ -14,7 +14,9 @@ const compareValues = (a, b, type) => {
   if (bEmpty) return -1;
 
   if (type === "number") {
+    // eslint-disable-next-line no-useless-escape
     const na = Number(String(a).replace(/[^0-9.\-]/g, ""));
+    // eslint-disable-next-line no-useless-escape
     const nb = Number(String(b).replace(/[^0-9.\-]/g, ""));
     if (Number.isNaN(na) && Number.isNaN(nb)) return 0;
     if (Number.isNaN(na)) return 1;

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import planDetailsIcon from "@assets/images/logos/plan-details.svg";
 import helperDetails from "@assets/images/logos/helper-details.svg";
 import relativies from "@assets/images/logos/relativies.svg";

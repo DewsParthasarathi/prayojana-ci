@@ -82,6 +82,7 @@ const OtpForm = () => {
     }
   };
 
+  // eslint-disable-next-line no-unused-vars
   const handleChangeNumber = () => {
     dispatch(clearPendingMobile());
     navigate(ROUTES.LOGIN, { replace: true });

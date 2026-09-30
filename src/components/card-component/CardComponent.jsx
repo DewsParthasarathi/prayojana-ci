@@ -1,4 +1,3 @@
-import React from "react";
 import CustomImage from "../image-component/CustomImage";
 
 const CardComponent = ({

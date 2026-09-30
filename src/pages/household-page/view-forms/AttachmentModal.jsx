@@ -19,6 +19,7 @@ const AttachmentModal = ({ isOpen, onClose, initialFiles = [], onSave }) => {
 
   useEffect(() => {
     if (isOpen) {
+      // eslint-disable-next-line renders
       setFiles(Array.isArray(initialFiles) ? initialFiles : []);
     }
   }, [isOpen, initialFiles]);

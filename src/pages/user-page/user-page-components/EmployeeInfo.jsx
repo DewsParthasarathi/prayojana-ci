@@ -1,4 +1,3 @@
-import React from "react";
 
 const EmployeeInfo = ({ users }) => {
   return (
