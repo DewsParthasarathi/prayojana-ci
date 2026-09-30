@@ -109,9 +109,9 @@ const CustomerDetails = ({ household }) => {
                       src={
                         buddy?.name === "Durga"
                           ? durga
-                          : null || buddy?.name === "Sreeleela"
+                          : buddy?.name === "Sreeleela"
                             ? sreeleela
-                            : null || buddy?.name === "Anjali"
+                            : buddy?.name === "Anjali"
                               ? anjali
                               : null
                       }

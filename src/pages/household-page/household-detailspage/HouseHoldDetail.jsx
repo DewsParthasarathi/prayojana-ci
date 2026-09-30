@@ -44,7 +44,6 @@ const HouseHoldDetail = () => {
   }, [householdId, registerCurrentHousehold]);
 
   useEffect(() => {
-    // eslint-disable-next-line renders
     fetchHousehold();
   }, [fetchHousehold]);
 

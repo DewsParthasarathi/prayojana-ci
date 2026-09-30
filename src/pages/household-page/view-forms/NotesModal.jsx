@@ -7,7 +7,6 @@ const NotesModal = ({ isOpen, onClose, initialNotes = "", onSave }) => {
 
   useEffect(() => {
     if (isOpen) {
-      // eslint-disable-next-line renders
       setValue(typeof initialNotes === "string" ? initialNotes : "");
     }
   }, [isOpen, initialNotes]);

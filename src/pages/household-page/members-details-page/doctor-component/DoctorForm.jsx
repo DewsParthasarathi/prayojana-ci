@@ -132,6 +132,7 @@ const DoctorForm = ({ household, elder, doctor, doctorIndex, onClose, onSuccess 
       setSubmissionError(message);
       showToast({ variant: "error", description: message });
     } finally {
+      setIsSubmitting(false);
     }
   };
 

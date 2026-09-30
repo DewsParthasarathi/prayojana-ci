@@ -47,7 +47,6 @@ const MembersDetailsPage = () => {
 
   useEffect(() => {
     if (initialElder?.elder_id) {
-      // eslint-disable-next-line renders
       setSelectedElderId(initialElder.elder_id);
     }
   }, [initialElder?.elder_id]);

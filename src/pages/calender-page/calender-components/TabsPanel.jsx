@@ -14,13 +14,11 @@ const TabsPanel = ({ taskGroups, interactionGroups, onEditItem, onDeleteItem }) 
   const [openIndex, setOpenIndex] = useState(0);
 
   useEffect(() => {
-    // eslint-disable-next-line renders
     setOpenIndex(groups.length > 0 ? 0 : -1);
   }, [activeTab]);
 
   useEffect(() => {
     if (openIndex >= groups.length) {
-      // eslint-disable-next-line renders
       setOpenIndex(groups.length > 0 ? 0 : -1);
     }
   }, [groups.length, openIndex]);

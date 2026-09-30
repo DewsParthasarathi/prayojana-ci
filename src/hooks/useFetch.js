@@ -5,6 +5,8 @@ const useFetch = (url, options = {}) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
+  const optionsString = JSON.stringify(options);
+
   useEffect(() => {
     if (!url) return;
 
@@ -13,7 +15,7 @@ const useFetch = (url, options = {}) => {
         setLoading(true);
         setError(null);
 
-        const response = await fetch(url, options);
+        const response = await fetch(url, JSON.parse(optionsString));
 
         if (!response.ok) {
           throw new Error("Failed to fetch");
@@ -29,7 +31,7 @@ const useFetch = (url, options = {}) => {
     };
 
     fetchData();
-  }, [url]);
+  }, [url, optionsString]);
 
   const request = async (requestUrl, requestOptions = {}) => {
     try {

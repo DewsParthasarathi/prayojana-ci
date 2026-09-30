@@ -30,7 +30,6 @@ const UserPage = () => {
   const [filteredUsers, setFilteredUsers] = useState(users);
 
   useEffect(() => {
-    // eslint-disable-next-line renders
     setFilteredUsers(users);
   }, [users]);
 

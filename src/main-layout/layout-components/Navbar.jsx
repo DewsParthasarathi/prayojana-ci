@@ -43,7 +43,6 @@ const Navbar = () => {
     const user = JSON.parse(sessionStorage.getItem("authUser"));
 
     if (user) {
-      // eslint-disable-next-line renders
       setActiveUser(user);
     }
   }, []);
@@ -52,7 +51,6 @@ const Navbar = () => {
     if (!activeUser || !Array.isArray(data) || data.length === 0) return;
 
     const validUser = data.find((admin) => admin.mobile === activeUser.mobile);
-    // eslint-disable-next-line renders
     setValidUser(validUser);
     console.log("Valid User:", validUser);
   }, [activeUser, data]);

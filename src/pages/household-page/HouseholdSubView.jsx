@@ -313,7 +313,7 @@ const HouseholdSubView = ({ viewType, household }) => {
     onOpenAttachment: (row) => setAttachModal({ isOpen: true, row }),
   };
 
-  const columns = useMemo(() => config.buildColumns(ctx), [config, rows, ctx]);
+  const columns = useMemo(() => config.buildColumns(ctx), [config, ctx]);
 
   const handleFormSubmit = (payload) => {
     const isEdit = sidebar.mode === "edit" && sidebar.row;
